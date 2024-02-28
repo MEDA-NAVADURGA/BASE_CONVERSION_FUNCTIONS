@@ -1,0 +1,83 @@
+                                                             ===================================================
+                                                                       BASE CONVERSION FUNCTIONS
+                                                            ===================================================
+1) In python we have three types of base functions.
+They are:=
+=============
+                 ***bin()
+                 ***oct()
+                 ***hex()
+===============
+    BIN():=
+===============
+     1) This function converts octal (or) decimal (or) hexadecimal to binary.
+    2)It is represented by "b" character.
+  -----------------
+      syntax:=
+  -----------------
+               varname=bin(oct/decimal/hexadecimal)
+  -------------------
+          ex:=
+  --------------------
+              1) a=0o14
+                 var=bin(a)
+                print(var)---------------------->o/p=0b1100
+                print(type(var))------------------>o/p=<class 'str'>
+              2) hexadecimal=0xAB
+                 var=bin(hexadecimal)
+                 print(var)---------------------->o/p=0b10101011
+                 print(type(var))------------------>o/p=<class 'str'>
+===================
+      OCT():=
+===================
+     1) This function converts binary (or) decimal (or) hexadecimal to octal.
+    2)It is represented by "o" character.
+  -----------------
+      syntax:=
+  -----------------
+               varname=oct(bin/decimal/hexadecimal)
+  -------------------
+          ex:=
+  --------------------
+          1) binary=0B1111
+             var=oct(binary)
+            print(var)------------------------>o/p=0o17
+            print(type(var))------------------>o/p=<class 'str'>
+           2) hexadecimal=0xcd
+              var=oct(hexadecimal)
+              print(var)------------------------>o/p=0o315
+              print(type(var))------------------>o/p=<class 'str'>
+========================
+       HEX():=
+========================
+      1) This function converts binary (or) decimal (or) octal to hexadecimal form(0-9 + A,B,C,D,E,F).
+    2)It is represented by "x" character.
+  -----------------
+      syntax:=
+  -----------------
+               varname=hex(bin/decimal/oct)
+  -------------------
+          ex:=
+  --------------------
+      1) binary=0b1111
+         var=hex(binary)
+         print(var)------------------>o/p=0xf
+         print(type(var))------------------>o/p=<class 'str'>
+      2) octal=0o4436
+         var=hex(octal)
+         print(var)------------------>o/p=0x91e
+         print(type(var))------------------>o/p=<class 'str'>
+      3) CONVERT (172)  ----------->(X)   ,FIND X?
+                      10                        16
+
+                |
+             16 | 172
+              --------                      ^
+              16 | 10----------> C (12)     |   
+              --------                      |
+                   0 ---------> A (10)      |
+               ------------------------------
+                (172) ----------> (0XAC)
+      
+              
+   
